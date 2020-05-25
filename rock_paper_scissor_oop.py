@@ -17,6 +17,9 @@ class Player:
         self.my_move = self.moves
         self.their_move = random.choice(self.moves)
 
+    def move(self):
+        return 'rock'
+
     def learn(self, my_move, their_move):
         self.my_move = my_move
         self.their_move = their_move
